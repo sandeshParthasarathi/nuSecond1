@@ -674,16 +674,15 @@
               <!-- BEGAIN GOOGLE MAP -->
                <div id="map_canvas"></div>
                <script>
-      var map;
+      var map_canvas;
       function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
+        map_canvas = new google.maps.Map(document.getElementById('map_canvas'), {
           center: {lat: 12.903179, lng: 7.6015981},
           zoom: 8
         });
       }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAptRbY7w99XHoMiRXyKky4lPsKmj46dgw&callback=initMap"
-    async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAptRbY7w99XHoMiRXyKky4lPsKmj46dgw&callback=initMap"></script>
               </div>
             </div>           
           </div>
