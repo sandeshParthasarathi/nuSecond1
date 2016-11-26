@@ -1239,7 +1239,7 @@ fieldset[disabled] .form-control {
 textarea .form-control {
   height: auto;
 }
-#map_canvas{
+.map_canvas{
 	width: 100%;
 	float: left;
 	display: inline;
