@@ -1,41 +1,13 @@
-/*
-Template Name: SinglePro - Multipurpose Bootstrap HTML5/CSS3 One Page Template
-Template URI:http://www.wpfreeware.com/themes/premium/singlepro/
-Author: WpFreeware Team
-Author URI: https://wrapbootstrap.com/user/wpfreeware
-Description: SinglePro - Multipurpose Bootstrap HTML5/CSS3 One Page Template.
-Version: 1.0
-Tags: light, white, landing page,single page,Multipurpose,custom-colors,Bootstrap,responsive, html5, css3
-*/
-
-
-/* Table of Content
-==================================================
-	#BASIC TYPOGRAPHY
-	#HEADER
-	#ABOUT SECTION
-	#SERVICE SECTION
-	#Works SECTION
-	#TEAM SECTION
-	#PRICING SECTION
-	#BLOG SECTION
-  #TESTIMONIAL SECTION
-  #CLIENTS SECTION
-  #CONTACT US SECTION
-  #FOOTER
-*/
-
-
-/*--------------------*/
-/* BASIC TYPOGRAPHY */
-/*--------------------*/
 
 body,html{
   overflow-x:hidden;
 }
 body {
- font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Oxygen', sans-serif;
   overflow-x: hidden !important;
+  text-align: justify;
 }
 
 
@@ -148,15 +120,15 @@ img{
 }
 .navbar-default {
   /*background-color: transparent;*/
-  background-color: rgba(0,0,0,0.8);
+  background-color: #242434 ;
   border-color: transparent;
-  margin-top: 20px;
+  margin-top: 0px;
   padding: 12px 0px;
 }
 .past-main {
   background-color: rgba(0,0,0,0.8);
   margin-top: 0px;
-  padding:6px 0px;
+  padding:12px 0px;
   -webkit-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
@@ -164,18 +136,24 @@ img{
 }
 #navbar{overflow-x: hidden;}
 
-.navbar-brand {                                                                                                                                                                                                                                                                                                                                                                                                                         	
-	color: #fff !important;
-	font-size: 35px;
-	font-weight: bolder;
-	font-family: 'Varela', sans-serif;
+#navbar{
+  margin: 13px 0px 15px 0px;
+}
+
+.navbar-brand img{                                                                                                                                                                                                                                                                                                                                                                                                                         	
+	margin: -5px 0px 5px 0px;
+  
+
+}
+.nav-height{
+  height: 100px;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   background-color: transparent;
 }
 
 .navbar-default .navbar-nav > li > a {
-  color: #fff;
+  color: #ffffff;
   font-size: 17px;
   font-weight: 600;
   text-transform: uppercase;
@@ -194,6 +172,7 @@ img{
 	float: left;
 	display: inline;
 	width: 100%;
+  margin-top: 100px;
 	position: relative;
 }
 .slider_overlay {
@@ -397,7 +376,7 @@ img{
   display: inline;
   float: left;
   width: 100%;
-  padding: 80px 0px;
+  padding: 30px 0px;
 }
 .about_area{
 	float: left;
@@ -487,7 +466,6 @@ img{
 	float: left;
 	display: inline;
 	width: 100%;
-	height: 350px;
 }
 .single_iteam{
 	float: left;
@@ -558,7 +536,7 @@ div[data-dimension] {
 #service {
   display: inline;
   float: left;
-  padding: 80px 0 70px;
+  padding: 30px 0 30px;
   width: 100%;
 }
 .service_area{
@@ -745,6 +723,10 @@ div[data-dimension] {
 .team_slider .slick-next, .team_slider .slick-prev{
   height: 40px;
 }
+.single_team_sm{
+  margin-left: 10px;
+  margin-right: 10px;   
+}
 .single_team {
   border: 2px solid #ccc;
   border-radius: 5px;
@@ -754,11 +736,26 @@ div[data-dimension] {
   text-align: center;
   width: 100%;
 }
+.single_team:hover {
+    border: 2px solid #000;
+    box-shadow: 4px 4px 4px #337ab7;
+}
+
 .team_img{
 	float: left;
 	display: block;
 	width: 100%;
 }
+
+
+.team_img img{
+  transition: all 0.1s ease-in-out;
+}
+
+.team_img:hover img {
+        transform: scale(1.1);
+}
+
 .team_img > img {
   border-radius: 100%;
   height: 150px;
@@ -802,6 +799,10 @@ div[data-dimension] {
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
+}
+
+.team_social:hover a i {
+  transform: scale(1.2);
 }
 
 /*--------------------*/
@@ -1003,104 +1004,6 @@ div[data-dimension] {
 	opacity: 0.7;
 }
 
-/*--------------------*/
-/* TESTIMONIAL SECTION */
-/*--------------------*/
-
-/*#testimonial{
-	background: none repeat scroll 0 0 #f8f8f8;
-	display: inline;
-	float: left;
-	padding: 80px 0;
-	width: 100%;
-	border-top: 1px solid #eee;
-	border-bottom: 1px solid #eee;
-}
-#testimonial .heading{
-	margin-top: 20px;
-}
-.testimonial_customer{
-	float: left;	
-	display: inline;	
-	width: 100%;		
-}
-.testimonial_slider{
-	float: left;	
-	display: inline;	
-	width: 100%;	
-}
-.testimonial_slider>li{
-	width: 380px;
-	margin: 0 auto;
-}
-.testi_media {
-  margin: 0 auto !important;
-  width: 250px;
-}
-.testi_media .media-body {  
-  vertical-align: middle;
-}
-.media-heading {  
-  font-size: 20px;
-}
-.testi_media .media-body span {
-  font-size: 16px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-.testi_media .media-left {
-  padding-right: 20px;
-}
-.testi_img img {
-  border-radius: 100%;
-  height: 100px;
-  width: 100px;
-}
-.testi_content {
-  background-color: #fff;
-  border: 1px solid #e6e6e6;
-  border-radius: 6px;
-  margin: 40px auto 0;
-  padding: 10px;
-  position: relative;
-  width: 100%;
-}
-.testi_content:before {
-  background-image: url("img/testimonial-arrow.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  content: "";
-  height: 22px;
-  left: 30%;
-  position: absolute;
-  top: -22px;
-  width: 32px;
-}
-.testimonial_slider .slick-dots li {
-  border: 1px solid #e6e6e6;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  height: 20px;
-  line-height: 102px;
-  margin: 0 5px;
-  padding: 7px 5px;
-  position: relative;
-  width: 34px;
-}
-.testimonial_slider .slick-dots li button:before {
-  content:none;  
-}
-.testimonial_slider .slick-dots li button {
-  background: none repeat scroll 0 0 #e6e6e6;
-  height: 4px;
-  padding: 0px;
-  width: 20px;
-}*/
-
-/*--------------------*/
-/* CLIENTS SECTION */
-/*--------------------*/
 
 #clients {
   display: inline;
@@ -1126,6 +1029,19 @@ div[data-dimension] {
   text-align: center;
   width: 100%;
   padding: 25px 0px;
+}
+
+.single_client:hover {
+    border: 2px solid #000;
+    box-shadow: 2px 2px 2px #337ab7;
+}
+
+.single_client img{
+  transition: all 0.1s ease-in-out;
+}
+
+.single_client:hover img {
+        transform: scale(1.1);
 }
 .single_client>img{
 	margin: 0 auto;
@@ -1430,7 +1346,7 @@ div.address {
   #slides{height: 600px !important;}
   .slider_caption > h2 {font-size: 48px;line-height: 48px;}
   .slider_caption > p {font-size: 18px;}
-  .about_area {padding-bottom: 80px;}
+  .about_area {padding-bottom: 50px;}
   .about_slider{margin-top: 30px;}
   .single_iteam {text-align: center;}
   .single_iteam img {display: inline-block;}
@@ -1480,8 +1396,8 @@ div.address {
 	.team_social a {font-size: 15px;height: 30px;line-height: 30px;width: 30px;}
 	.blog_slider .slick-prev {left: 86.5%;}
 	.og-close {z-index: 999;}
-	#about {padding: 50px 0;}
-	#service {padding: 50px 0 50px;}
+	#about {padding: 30px 0;}
+	#service {padding: 30px 0 30px;}
 	#works {padding: 0 0 50px;}
 	#team {padding: 50px 0;}
 	#pricing {padding: 50px 0;}
@@ -1495,7 +1411,6 @@ div.address {
 	.single_service > .service_title:after {left: 41%;}	
   .wagwep-container ul#portfolio-filter li {width: auto;}
   .wagwep-container ul#portfolio-filter a {text-indent: 0;}
-
 }
 
 @media(max-width:480px ){	
@@ -1504,6 +1419,8 @@ div.address {
 	.slider_caption > h2 { font-size: 20px;line-height: 22px;margin-bottom: 0px;}
 	.slider_caption > p {font-size: 14px;}
 	.slider_caption > a { font-size: 15px; margin-top: 20px;  padding: 8px 10px;}
+   #about {padding: 20px 0;}
+   #service {padding: 20px 0 20px;}
 	.wagwep-container ul#portfolio-filter li {width: auto;}
 	.wagwep-container ul#portfolio-filter a {font-size: 10px;margin: 0 0 2px;padding: 5px;text-align: center;text-indent: 0;}
 	.blog_slider .slick-prev {left: 81.5%;} 
@@ -1524,6 +1441,8 @@ div.address {
 	.slider_caption > a {margin-top: 10px;}
 	.slides-navigation h3 {display: none;}
 	.slider_caption > h2 {font-size: 18px;line-height: 20px;}
+  #about {padding: 20px 0;}
+   #service {padding: 20px 0 20px;}
 	.panel-title {font-size: 17px;}
 	.about_area {padding-bottom: 0px;}
 	.about_slider{height: auto;}
@@ -1544,6 +1463,8 @@ div.address {
 @media(max-width:320px ){
 	.slider_caption > h2 {font-size: 15px;line-height: 18px;}
 	.single_service > .service_title:after {left: 29%;}
+  #about {padding: 20px 0;}
+   #service {padding: 20px 0 20px;}
 	.blog_slider .slick-prev {left: 70.5%;}
 	.subscr_btn {font-size: 11px;}
 	.slider_caption {margin-top: 34%;}  

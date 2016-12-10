@@ -37,7 +37,8 @@
     <link href="style.css" rel="stylesheet">
    
     <!-- Google fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'> -->
     <link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 
@@ -64,7 +65,7 @@
     <header id="header">
       <!-- BEGIN MENU -->
       <div class="menu_area">
-        <nav class="navbar navbar-default navbar-fixed-top"> 
+        <nav class="navbar navbar-default navbar-fixed-top nav-height"> 
           <div class="container">
           <div class="navbar-header">
             <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
@@ -81,8 +82,8 @@
             <!-- <a class="navbar-brand" href="#">Single<span>Pro</span></a> -->
             
             <!-- IMAGE BASED LOGO  -->
-             <a class="navbar-brand" href="#"><img src="img/nusecondlogo.png" alt="logo"></a> 
-            
+             <a class="navbar-brand visible-xs" href="https://nusecond.com"><img class="img-responsive" src="img/nusecondlogo.png" alt="logo"></a> 
+             <a class="navbar-brand hidden-xs " href="https://nusecond.com"><img class="img-responsive" src="img/nusecondlogo.png" alt="logo" width="280" height="60"></a>
                    
           </div>
           <div id="navbar" class="navbar-collapse collapse">
@@ -105,55 +106,14 @@
       <!-- END MENU -->
 
       <!-- BEGIN SLIDER AREA-->
-      <div class="slider_area">
-        <!-- BEGIN SLIDER-->          
-        <div id="slides">
-          <ul class="slides-container">
+     
+    <div class="slider_area">
+        <img class="mySlides" src="img/full-slider1.jpg" style="width:100%">
+        <img class="mySlides" src="img/full-slider2.jpg" style="width:100%">
+        <img class="mySlides" src="img/full-slider3.jpg" style="width:100%">
 
-            <!-- THE FIRST SLIDE-->
-            <li>
-              <!-- FIRST SLIDE OVERLAY -->
-              <div class="slider_overlay"></div> 
-              <!-- FIRST SLIDE MAIN IMAGE -->
-              <img src="img/full-slider1.jpg" alt="img">
-              <!-- FIRST SLIDE CAPTION-->
-              <div class="slider_caption">
-               <!--  <h2>Innovation for Changing Lifestyles</h2> -->
-                <!-- <p>we are a group of experienced designers and developers</p> -->
-                <!-- <a href="#" class="slider_btn">Who We are</a>               -->
-              </div>
-            </li>
-
-            <!-- THE SECOND SLIDE-->
-            <li>
-              <!-- SECOND SLIDE OVERLAY -->
-              <div class="slider_overlay"></div> 
-              <!-- SECOND SLIDE MAIN IMAGE -->
-              <img src="img/full-slider2.jpg" alt="img">
-              <!-- SECOND SLIDE CAPTION-->
-              <div class="slider_caption">
-                <!-- <h2>We Focus on Your Challenges</h2> -->
-                <!-- <p>we are a group of experienced designers and developers</p> -->
-                <!-- <a href="#" class="slider_btn">Who We are</a> -->
-              </div>
-            </li>
-
-            <!-- THE THIRD SLIDE-->
-            <li>
-              <!-- THIRD SLIDE OVERLAY -->
-              <div class="slider_overlay"></div> 
-              <!-- THIRD SLIDE MAIN IMAGE -->
-              <img src="img/full-slider3.jpg" alt="img">
-              <!-- THIRD SLIDE CAPTION-->
-              <div class="slider_caption">
-               <!--  <h2>Enabling Technology and Business Transformation/h2> -->
-                <!-- <p>we are a group of experienced designers and developers</p> -->
-                <!-- <a href="#" class="slider_btn">Who We are</a>       -->           
-              </div>
-            </li>
-          </ul>
-          <!-- BEGAIN SLIDER NAVIGATION -->
-          <nav class="slides-navigation">
+   <!-- BEGAIN SLIDER NAVIGATION -->
+          <nav class="slides-navigation hidden-xs">
             <!-- PREV IN THE SLIDE -->
             <a class="prev" href="#">
               <span class="icon-wrap"></span>
@@ -164,10 +124,27 @@
               <span class="icon-wrap"></span>
               <h3><strong>Next</strong></h3>
             </a>
-          </nav>       
+          </nav> 
+
         </div>
-        <!-- END SLIDER-->          
-      </div>
+
+
+                    <script>
+                    var myIndex = 0;
+                    carousel();
+
+                    function carousel() {
+                        var i;
+                        var x = document.getElementsByClassName("mySlides");
+                        for (i = 0; i < x.length; i++) {
+                           x[i].style.display = "none";  
+                        }
+                        myIndex++;
+                        if (myIndex > x.length) {myIndex = 1}    
+                        x[myIndex-1].style.display = "block";  
+                        setTimeout(carousel, 3000); // Change image every 2 seconds
+                    }
+                    </script>
       <!-- END SLIDER AREA -->
     </header>
     <!--=========== End HEADER SECTION ================--> 
@@ -188,7 +165,7 @@
               <!-- START ABOUT CONTENT -->
               <div class="about_content">
                 <div class="row">
-                  <div class="col-lg-6 col-md-6 col-sm-12">
+                  <div class="col-lg-5 col-md-5 col-sm-12">
                     <div class="about_featured">
                       <div class="panel-group" id="accordion">
                         <!-- START SINGLE FEATURED ITEM #1-->
@@ -202,7 +179,8 @@
                           </div>
                           <div id="collapseOne" class="panel-collapse collapse in">
                             <div class="panel-body">
-                            <strong>Our Vision:</strong> nuSecond 's vision and values serve to inspire how we interact, create and deliver on our promise to clients, job seekers and ourselves. Our vision is to lead in the creation and delivery of innovative workforce solutions and services that enable our clients to win in the changing world of work.<br>
+                            <strong>Our Vision:</strong> nuSecond's vision and values serve to inspire how we interact, create and deliver on our promise to clients, job seekers and ourselves. Our vision is to lead in the creation and delivery of innovative workforce solutions and services that enable our clients to win in the changing world of work.<br>
+                            <br>
                             <strong>Our Mission:</strong> Our customers are central to our mission. We are committed to connecting great companies with great employees and opening up opportunities for  our  consultants..
                             </div>
                           </div>
@@ -247,29 +225,29 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-6 col-sm-12">
+                  <div class="col-lg-7 col-md-7 col-sm-12">
                     <div class="about_slider">
                       <!-- BEGAIN FEATURED SLIDER -->
                       <div class="featured_slider">
                         <!-- SINGLE SLIDE IN THE SLIDER -->
                         <div class="single_iteam">
-                         <img src="img/services_img1.jpg" alt="img">                      
+                         <img src="img/services_img1.jpg" alt="img" width="750px">                      
                         </div>
                         <!-- SINGLE SLIDE IN THE SLIDER -->
                         <div class="single_iteam">
-                        <img src="img/services_img2.jpg" alt="img">                       
+                        <img src="img/services_img2.jpg" alt="img" width="750px">                       
                         </div>
                         <!-- SINGLE SLIDE IN THE SLIDER -->
                         <div class="single_iteam">
-                        <img src="img/services_img3.jpg" alt="img">                         
+                        <img src="img/services_img3.jpg" alt="img" width="750px">                         
                         </div>
                         <!-- SINGLE SLIDE IN THE SLIDER -->
                         <div class="single_iteam">
-                        <img src="img/services_img4.jpg" alt="img">                        
+                        <img src="img/services_img4.jpg" alt="img" width="750px">                        
                         </div>
                         <!-- SINGLE SLIDE IN THE SLIDER -->
                         <div class="single_iteam">
-                        <img src="img/services_img5.jpg" alt="img">                          
+                        <img src="img/services_img5.jpg" alt="img" width="750px" >                          
                         </div>
                       </div>
                       <!-- END FEATURED SLIDER -->
@@ -381,7 +359,7 @@
     <section class="visible-xs">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 col-md-12">
+          <div>
             <!-- BEGAIN ABOUT HEADING -->
             <div class="heading">
               <h2 class="wow fadeInLeftBig">Our Team</h2>            
@@ -390,7 +368,7 @@
               <!-- BEGAIN TEAM SLIDER -->
               <div class="team_slider">  
                 <!-- BEGAIN SINGLE TEAM SLIDE#1 -->              
-                <div class="col-lg-3 col-md-3 col-sm-4">
+                <div class="single_team_sm">
                   <div class="single_team wow fadeInUp">
                     <div class="team_img">
                       <img src="img/team_img1.jpg" alt="img">
@@ -407,7 +385,7 @@
                   </div>
                 </div>
                 <!-- BEGAIN SINGLE TEAM SLIDE#2 -->
-                <div class="col-lg-3 col-md-3 col-sm-4">
+                <div class="single_team_sm">
                   <div class="single_team wow fadeInUp">
                     <div class="team_img">
                       <img src="img/team_img2.jpg" alt="img">
@@ -424,7 +402,7 @@
                   </div>
                 </div>
                 <!-- BEGAIN SINGLE TEAM SLIDE#3 -->
-                <div class="col-lg-3 col-md-3 col-sm-4">
+                <div class="single_team_sm">
                   <div class="single_team wow fadeInUp">
                     <div class="team_img">
                       <img src="img/team_img3.jpg" alt="img">
@@ -527,10 +505,10 @@
         <div class="row">
               <div class="col-sm-12 col-md-12 col-lg-12">
                   <div class="single_team wow fadeInUp">
-                    <div >
-                      <img src="img/team-1.jpg" alt="img">
+                    <div class="team-img">
+                      <img class="img-responsive" src="" alt="img">
                     </div>
-                    <h5>Jamie Sidens</h5>
+                    <h5>Team nuSecond</h5>
                   </div>
                 </div>
           </div>
@@ -544,7 +522,7 @@
           <div class="col-lg-12 col-md-12 col-sm-12">
             <!-- START BLOG HEADING -->
             <div class="heading">
-              <h2 class="wow fadeInLeftBig">Our Best Clients</h2>
+              <h2 class="wow fadeInLeftBig">Our Clients</h2>
               <p>We like to work with ambitious people as well as start-ups, small, medium and large sized businesses. If you have the right skills and wish to be a part of our team or in maybe a part of our client list, how about talking over a cup of coffee...!</p>
             </div>
           </div>
@@ -554,31 +532,31 @@
                 <!-- BEGAIN CLIENTS SLIDER -->
                 <div class="clients_slider">
                   <!-- BEGAIN SINGLE CLIENT SLIDE#1 -->
-                  <div class="col-lg-3 col-md-3 col-sm-3">
+                  <div class="col-lg-3 col-md-3 col-sm-3 client">
                     <div class="single_client">
                       <img src="img/clients_img1.jpg" alt="clients Brand">
                     </div>
                   </div>
                   <!-- BEGAIN SINGLE CLIENT SLIDE#2 -->
-                  <div class="col-lg-3 col-md-3 col-sm-3">
+                  <div class="col-lg-3 col-md-3 col-sm-3 client">
                     <div class="single_client">
                       <img src="img/clients_img2.jpg" alt="clients Brand">
                     </div>
                   </div>
                   <!-- BEGAIN SINGLE CLIENT SLIDE#3 -->
-                  <div class="col-lg-3 col-md-3 col-sm-3">
+                  <div class="col-lg-3 col-md-3 col-sm-3 client">
                     <div class="single_client">
                       <img src="img/clients_img3.jpg" alt="clients Brand">
                     </div>
                   </div>
                   <!-- BEGAIN SINGLE CLIENT SLIDE#4 -->
-                  <div class="col-lg-3 col-md-3 col-sm-3">
+                  <div class="col-lg-3 col-md-3 col-sm-3 client">
                     <div class="single_client">
                       <img src="img/clients_img4.jpg" alt="clients Brand">
                     </div>
                   </div>
                    <!-- BEGAIN SINGLE CLIENT SLIDE#5 -->
-                  <div class="col-lg-3 col-md-3 col-sm-3">
+                  <div class="col-lg-3 col-md-3 col-sm-3 client">
                     <div class="single_client">
                       <img src="img/clients_img5.jpg" alt="clients Brand">
                     </div>
