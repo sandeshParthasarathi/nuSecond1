@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/png" href="img/favicon.jpg"/>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
 
     <!-- CSS
     ================================================== -->       
@@ -37,7 +37,9 @@
     <link href="style.css" rel="stylesheet">
    
     <!-- Google fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <!-- <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'> -->
+    <!-- <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'> -->
     <link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 
@@ -48,7 +50,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-   <body> 
+  <body> 
      <!-- BEGIN PRELOADER -->
     <div id="preloader">
       <div id="status">&nbsp;</div>
@@ -56,49 +58,29 @@
     <!-- END PRELOADER -->
 
     <!-- SCROLL TOP BUTTON -->
+    
     <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
     <!-- END SCROLL TOP BUTTON -->
 
     <!--=========== BEGIN HEADER SECTION ================-->
     <header id="header">
       <!-- BEGIN MENU -->
-      <!-- <div class="menu_area"> -->
-        <nav class="navbar navbar-default navbar-fixed-top" role="navigation"> 
+      <div class="menu_area">
+        <nav class="navbar navbar-default navbar-fixed-top nav-height"> 
           <div class="container">
-          <div class="navbar-header">
-            <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
-<!--             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
- -->
+           <div class="navbar-header">
+
             <!-- LOGO -->
 
             <!-- TEXT BASED LOGO -->
             <!-- <a class="navbar-brand" href="#">Single<span>Pro</span></a> -->
             
             <!-- IMAGE BASED LOGO  -->
-             <a class="navbar-brand" href="index.html" target="_blanck"><img src="img/nusecondlogo.png" alt="logo"></a> 
-            
+             <a class="navbar-brand visible-xs" href="https://nusecond.com"><img class="img-responsive" src="img/nusecondlogo.png" alt="logo"></a> 
+             <a class="navbar-brand hidden-xs " href="https://nusecond.com"><img class="img-responsive" src="img/nusecondlogo.png" alt="logo" width="280" height="60"></a>
                    
-         <!--  </div>
-          <div id="navbar" class="navbar-collapse collapse">
-            <ul id="top-menu" class="nav navbar-nav navbar-right main_nav">
-              <li><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#service">Services</a></li> 
-              <li><a href="#works">Works</a></li> 
-              <li><a href="#team">Team</a></li> 
-              <li><a href="#pricing">Pricing</a></li> 
-              <li><a href="#blog">Blog</a></li> 
-              <li><a href="#clients">Clients</a></li> 
-              <li><a href="http://careers.nusecond.com" target="_blank">Careers</a></li>
-              <li><a href="#contact">Contacts</a></li>                           
-            </ul>           
-          </div> --><!--/.nav-collapse -->
-         <!--  </div>  -->    
+           </div>
+          </div>     
         </nav>  
       </div>
       <!-- END MENU -->
@@ -119,27 +101,29 @@
               <h2 id="section1" class="wow fadeInLeftBig">Staff augmentation </h2>
                <div  style="font-size:16px;">
                    <ul style="list-style-position:inside;">
-                  <li> Identify Resource Qualification Requirements (one time process)</li>
-                  <li>Determine what is required for all resources to be successful.
-                     <ul class style="list-style-type:circle ;list-style-position:inside; padding-left:30px;">
-                        <li>Job Description (expectations)</li>
-                        <li>Required/Desired Skills (process, technical, business, soft)</li>
-                        <li>Processes (RUP, AGILE, Six Sigma, Custom)</li>
-                        <li>Processes (RUP, AGILE, Six Sigma, Custom)</li>
-                        <li>Level/Years of Experience Required/Desired</li>
-                        <li>Environment (tools, technology, languages)</li>
-                        <li>Business/Package (Verticals and/or software packages)</li>
-                  </ul></li>
-                  <li>Create Collaborative Processes (one time process)</li>
-                  <li>Create the Screening and Selection process and documents that validate a candidate's skills and ensure those skills exceed customer expectations
-                  <ul class style="list-style-type:circle ;list-style-position:inside; padding-left:30px;">
-                      <li>Interview Questionnaire</li>
-                    <li>Required/Desired Skills (process, technical, business, soft)</li>
-                    <li>Processes (RUP, AGILE, Six Sigma, Custom)</li>
-                    <li>Identify applicable tests (quizonline, etc.) and acceptable results</li>
-                    <li>Customizable by Region, Location, Dept, etc</li>
-                  </ul></li>
-              </ul>
+                      <li>Create the Screening and Selection process that documents and validate a candidate's skills and ensure those skills exceed customer expectations
+                          <ul class style="list-style-type:circle ;list-style-position:inside; padding-left:30px;">
+                            <li>Interview Questionnaire</li>
+                            <li>Required/Desired Skills (process, technical, business, soft)</li>
+                            <li>Processes (RUP, AGILE, Six Sigma, Custom)</li>
+                            <li>Identify applicable tests (quizonline, etc.) and acceptable results</li>
+                            <li>Customizable by Region, Location, Dept, etc</li>
+                          </ul>
+                      </li>
+                      <li>Create Collaborative Processes</li>
+                      <li>Determine what is required for all resources to be successful.
+                         <ul class style="list-style-type:circle ;list-style-position:inside; padding-left:30px;">
+                            <li>Job Description</li>
+                            <li>Required/Desired Skills (process, technical, business, soft)</li>
+                            <li>Processes (RUP, AGILE, Six Sigma, Custom)</li>
+                            <li>Processes (RUP, AGILE, Six Sigma, Custom)</li>
+                            <li>Level/Years of Experience Required/Desired</li>
+                            <li>Environment (tools, technology, languages)</li>
+                            <li>Business/Package (Verticals and/or software packages)</li>
+                         </ul>
+                      </li>
+                      <li> Identify Resource Qualification Requirements</li>
+                   </ul>
               </div>
 
             </div>
@@ -194,7 +178,7 @@
                   <div style="padding-left:30px;">
                     <h4 style="font-size:18px; color: #2da2c8;">Cloud Automation Services Factory :</h4> <p style="padding-left:15px;">Mandatory cloud engineering services include Server automation, Network automation and Operation Orchestration. These being the key for success of any cloud deployments attracts wider business IT attention and here in NuSeconds this piece of engineering services has been successfully incubated and put on accelerated growth path with close to 100 professionals.</p>
                   </div>
-                 <div><p>As an early success NuSeconds has been empaneled as a services and SMEs provider to one of the leading global MNCs in this area giving a definitive path of acceleration and clean ROI in the early stages.</p></div>
+                 <div><p>As an early success NuSecond has been empaneled as a services and SMEs provider for many global MNCs which gives definitive path of acceleration and clean ROI in the early stages.</p></div>
                 </div>
               </div>
             </div>
@@ -255,10 +239,10 @@
                 <ul style="list-style-position:inside;">
                   <li> Expert CLOUD training to end users to increase adoption.
 
-                  <h4 style="font-size:18px; color: #2da2c8; padding-left:20px;">HP CSA :</h4>
+                  <h4 style="font-size:18px; color: #2da2c8; padding-left:20px;">HP Cloud Service Automation :</h4>
                   <p style="padding-left:30px;">HP Cloud Service Automation (HP CSA) is cloud management software from Hewlett-Packard that is used by companies and government agencies to automate the management of cloud-based IT-as-a-service, from order, to provision, and retirement.HP Cloud Service Automation orchestrates the provisioning and deployment of complex IT services such as of databases, middleware, and packaged applications (i.e., ERP, Exchange).[2] The software speeds deployment of application-based services across hybrid cloud delivery platforms and traditional IT environments.The software is part of a broad portfolio of HP enterprise management software products aimed at helping companies manage the lifecycle of deployment and usage of cloud computing, whether through public or private clouds, or both.</p>
 
-                  <h4 style="font-size:18px; color: #2da2c8; padding-left:20px;">HP SA :</h4>
+                  <h4 style="font-size:18px; color: #2da2c8; padding-left:20px;">HP Server Automation :</h4>
                   <p style="padding-left:30px;">Reduce costs and increase speed by automating tasks such as provisioning, patching and compliance across physical and virtual server environments.
 Increase Security with Server Automation: Detect new vulnerabilities across data centers and deploy patches for remediation based on defined policies and move them into compliance with HPE Server Automation.   
 Introducing HP Data Center Automation Appliance:Make Data Center operations easy. Get HP DCAA, the unified, customizable virtual appliance for managing small to midsize IT environments that operate physical, virtual and cloud based servers.</p>

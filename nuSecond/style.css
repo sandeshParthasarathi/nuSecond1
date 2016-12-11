@@ -5,7 +5,7 @@ body,html{
 body {
   font-size: 16px;
   font-weight: 500;
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Oxygen',"Open Sans", sans-serif;
   overflow-x: hidden !important;
   text-align: justify;
 }
@@ -594,7 +594,12 @@ div[data-dimension] {
   position: absolute;
   width: 100px;
 }
-
+.knw-mre{
+  color: #2da2c8;
+}
+.knw-mre:hover{
+  color: #00F ;
+}
 /*--------------------*/
 /* Works SECTION */
 /*--------------------*/
