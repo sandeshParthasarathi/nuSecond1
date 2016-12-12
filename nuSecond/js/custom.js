@@ -1,27 +1,4 @@
-/**	
-	* SinglePro HTML 1.0	
-	* Template Scripts
-	* Created by WpFreeware Team
 
-	Custom JS
-	
-	1. Superslides Slider
-	2. Fixed Top Menubar
-	3. Featured Slider
-	4. Skill Circle
-	5. Wow animation
-	6. Project Counter
-	7. TEAM SLIDER
-	8. BLOG SLIDER
-	9. TESTIMONIAL SLIDER
-	10. CLIENTS SLIDER
-	11. Google Map
-	12. SCROLL TOP BUTTON
-	13. PRELOADER 
-	14. MENU SCROLL 
-	15. MOBILE MENU CLOSE 	
-	
-**/
 
 jQuery(function($){
 
@@ -64,7 +41,7 @@ jQuery(function($){
       slide: 'div',
       autoplay: true,
       fade: true,
-      autoplaySpeed: 5000,
+      autoplaySpeed: 1500,
       cssEase: 'linear'
     });
 
@@ -239,7 +216,14 @@ jQuery(function($){
 		      }
 		    },
 		    {
-		      breakpoint: 600,
+		      breakpoint: 991,
+		      settings: {
+		        slidesToShow: 3,
+		        slidesToScroll: 3
+		      }
+		    },
+		    {
+		      breakpoint: 767,
 		      settings: {
 		        slidesToShow: 2,
 		        slidesToScroll: 2
@@ -255,44 +239,6 @@ jQuery(function($){
 		  ]
 		});
 
-
-	/* ----------------------------------------------------------- */
-	/*  8. BLOG SLIDER
-	/* ----------------------------------------------------------- */
-
-
-    $('.blog_slider').slick({
-		  dots: false,
-		  infinite: true,
-		  speed: 300,
-		  slidesToShow: 3,
-		  slidesToScroll: 3,
-		  responsive: [
-		    {
-		      breakpoint: 1024,
-		      settings: {
-		        slidesToShow: 3,
-		        slidesToScroll: 3,
-		        infinite: true,
-		        dots: true
-		      }
-		    },
-		    {
-		      breakpoint: 600,
-		      settings: {
-		        slidesToShow: 2,
-		        slidesToScroll: 2
-		      }
-		    },
-		    {
-		      breakpoint: 480,
-		      settings: {
-		        slidesToShow: 1,
-		        slidesToScroll: 1
-		      }
-		    }
-		]
-	});
 
 
 	/* ----------------------------------------------------------- */
@@ -350,20 +296,6 @@ jQuery(function($){
 		]
 	});
 
-
-    /* ----------------------------------------------------------- */
-	/*  11. Google Map
-	/* ----------------------------------------------------------- */
-
-	  var zoom= $('#map_canvas').gmap('option', 'zoom');
-      
-      $('#map_canvas').gmap().bind('init', function(ev, map) {
-        $('#map_canvas').gmap('addMarker', {'position': '12.903179,77.6015981', 'bounds': true});
-        $('#map_canvas').gmap('option', 'zoom', 13);
-      });
-
-
-	/* ----------------------------------------------------------- */
 	/*  12. SCROLL TOP BUTTON
 	/* ----------------------------------------------------------- */
 

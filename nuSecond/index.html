@@ -34,7 +34,7 @@
     <!-- Default Theme css file -->
     <link id="orginal" href="css/themes/default-theme.css" rel="stylesheet">
     <!-- Main structure css file -->
-    <link href="style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
    
     <!-- Google fonts -->
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
@@ -133,14 +133,6 @@
               <div class="item">
                 <img src="img/full-slider3.jpg"  style="width:100%">
               </div>
-
-              <!-- <div class="item">
-                <img src="img/full-slider4.jpg" style="width:100%">
-              </div>
-
-              <div class="item">
-                <img src="img/full-slider5.jpg" style="width:100%">
-              </div> -->
             </div>
 
             <!-- Left and right controls -->
@@ -574,24 +566,6 @@
                       <img src="img/clients_img5.jpg" alt="clients Brand">
                     </div>
                   </div>
-                  <!-- BEGAIN SINGLE CLIENT SLIDE#6 -->
-                 <!--  <div class="col-lg-3 col-md-3 col-sm-3">
-                    <div class="single_client">
-                      <img src="img/clients_img1.png" alt="clients Brand">
-                    </div>
-                  </div> -->
-                  <!-- BEGAIN SINGLE CLIENT SLIDE#7 -->
-                  <!-- <div class="col-lg-3 col-md-3 col-sm-3">
-                    <div class="single_client">
-                      <img src="img/clients_img1.png" alt="clients Brand">
-                    </div>
-                  </div> -->
-                  <!-- BEGAIN SINGLE CLIENT SLIDE#8 -->
-                 <!--  <div class="col-lg-3 col-md-3 col-sm-3">
-                    <div class="single_client">
-                      <img src="img/clients_img1.png" alt="clients Brand">
-                    </div>
-                  </div> -->
                 </div>
               </div>
             </div>
@@ -622,69 +596,41 @@
 
                 <!-- FOR CONTACT FORM MESSAGE -->
                 <div id="form-messages"></div>
+                        <form name="contact" method="post" action="mailto:sandeshowlcity@gmail.com">
+                        <div class="form-group">
+                          <label for="contact-name">Name</label>
+                          <input type="text" class="form-control" id="contact-name" name="name"       placeholder="Enter your name.." onkeyup='validateName()'>
+                          <span class='error-message' id='name-error'></span>
+                        </div>
 
-                <!-- <form id="contact" name="contact" method="post" action="mailto:nusecondinfo@gmail.com">
-                  <input class="form-control" type="text" placeholder="Name">
-                  <input class="form-control" type="email" placeholder="Email">
-                  <input class="form-control" type="text" placeholder="Subject">
-                  <textarea class="form-control" cols="30" rows="10" placeholder="Your Message"></textarea>
-                   <input class="submit_btn" type="submit" value="Send">  
-                </form> -->
-          <form name="contact" method="post" action="mailto:sandeshowlcity@gmail.com">
-          <div class="form-group">
-            <label for="contact-name">Name</label>
-            <input type="text" class="form-control" id="contact-name" name="name"       placeholder="Enter your name.." onkeyup='validateName()'>
-            <span class='error-message' id='name-error'></span>
-          </div>
+                        <div class="form-group">
+                          <label for="contact-phone">Phone Number</label>
+                          <input type="tel" class="form-control" id="contact-phone" name="phone" placeholder="Ex: 1231231234" onkeyup='validatePhone()'>
+                          <span class='error-message' id='phone-error'></span>
+                        </div>
 
-          <div class="form-group">
-            <label for="contact-phone">Phone Number</label>
-            <input type="tel" class="form-control" id="contact-phone" name="phone" placeholder="Ex: 1231231234" onkeyup='validatePhone()'>
-            <span class='error-message' id='phone-error'></span>
-          </div>
+                        <div class="form-group">
+                          <label for="contact-email">Email address</label>
+                          <input type="email" class="form-control" id="contact-email" name="email" placeholder="Enter Email" onkeyup='validateEmail()'>
+                          <span class='error-message' id='email-error'></span>
+                        </div>   
 
-          <div class="form-group">
-            <label for="contact-email">Email address</label>
-            <input type="email" class="form-control" id="contact-email" name="email" placeholder="Enter Email" onkeyup='validateEmail()'>
-            <span class='error-message' id='email-error'></span>
-          </div>   
-
-          <div class="form-group">
-            <label for='contactMessage'>Your Message</label>
-            <textarea class="form-control" rows="5" id='contact-message'  name='message'  placeholder="Enter a brief message" onkeyup='validateMessage()'></textarea>
-            <span class='error-message' id='message-error'></span>
-          </div>
-        <button onclick='return validateForm()' class="btn btn-default submit_btn">Submit</button>
-        <span class='error-message' id='submit-error'></span>
-      </form>
-              </div>
+                        <div class="form-group">
+                          <label for='contactMessage'>Your Message</label>
+                          <textarea class="form-control" rows="5" id='contact-message'  name='message'  placeholder="Enter a brief message" onkeyup='validateMessage()'></textarea>
+                          <span class='error-message' id='message-error'></span>
+                        </div>
+                      <button onclick='return validateForm()' class="btn btn-default submit_btn">Submit</button>
+                      <span class='error-message' id='submit-error'></span>
+                    </form>
+                            </div>
             </div>
             <!-- BEGAIN CONTACT MAP -->
             <div class="col-lg-7 col-md-7 col-sm-7">
               <div class="contact_map">
               <!-- BEGAIN GOOGLE MAP -->
-              <!--  <div id="map_canvas"></div> -->
-
+              
                  <iframe class="map_canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.0705622547466!2d77.59940941423191!3d12.903184219868416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15192e407d89%3A0x4a8828ded4e18d89!2snuSecond+Technologies+Pvt+Ltd.!5e0!3m2!1sen!2sin!4v1469103097960" ></iframe>
-              <!--  <div id="map"></div>
-                    <script>
-                      function initMap() {sid
-                      var uluru = {lat: -25.363, lng: 131.044};
-                      var map = new google.maps.Map(document.getElementById('map'), {
-                      zoom: 4,
-                      center: uluru
-                       });
-                          var marker = new google.maps.Marker({
-                          position: uluru,
-                          map: map
-                        });
-                     }
-                    </script>
-                    <script async defer
-                 src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
-                  </script> -->
-
-     
               </div>
             </div>           
           </div>
@@ -717,14 +663,6 @@
                 <p>nusecondinfo@gmail.com</p>
               </div>
             </div>
-            <!-- BEGIN CALL US FEATURE -->
-            <!-- <div class="col-lg-3 col-md-3 col-sm-6">
-              <div class="single_contact_feaured wow fadeInUp">
-                <i class="fa fa-map-marker"></i>
-                <h4>Office Location</h4>
-                <p>Your Company Office Location</p>
-              </div>
-            </div> -->
            <div class="col-lg-4 col-md-4 col-sm-4">
               <div class="single_contact_feaured wow fadeInUp">
                 <i class="fa fa-clock-o"></i>
@@ -773,7 +711,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Google map -->
     <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script src="js/jquery.ui.map.js"></script>
+    <!-- <script src="js/jquery.ui.map.js"></script> -->
      <!-- For smooth animatin  -->
     <script src="js/wow.min.js"></script> 
     <!-- Bootstrap js -->
@@ -789,7 +727,6 @@
     <script src="js/classie.js"></script>
     <script src="js/elastic_grid.min.js"></script>
     <script src="js/portfolio_slider.js"></script>
-     <script src="js/script.js"></script>
 
     <!-- Custom js-->
     <script src="js/custom.js"></script>
