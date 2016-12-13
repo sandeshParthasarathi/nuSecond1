@@ -374,9 +374,12 @@ jQuery(function($){
 	/*  15. MOBILE MENU ACTIVE CLOSE 
 	/* ----------------------------------------------------------- */ 
 
-	$('.navbar-nav').on('click', 'li a', function() {
-	  $('.navbar-collapse').collapse('hide');
-	});
+$(document).ready(function () {
 
-	
+$('.nav-container').on({
+
+   click: function () { $("#button").prop("checked", false); }
+
+}, 'a');
+
 });
