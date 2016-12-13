@@ -1,18 +1,3 @@
-// Active menu item
-   $(function(){
-    var current = location.pathname;
-    $('#top-menu li a').each(function(){
-        var $this = $(this);
-        // if the current path is like this link, make it active
-        if($this.attr('href').indexOf(current) !== -1){
-            $this.addClass('active');
-        }
-    })
-})
-
-
-
-
 $(function () { // Same as document.addEventListener("DOMContentLoaded"...
 
   // Same as document.querySelector("#navbarToggle").addEventListener("blur",...

@@ -380,13 +380,3 @@ jQuery(function($){
 
 	
 });
-
-$(document).ready(function () {
-
-$('.nav-container').on({
-
-   click: function () { $("#button").prop("checked", false); }
-
-}, 'a');
-
-});
