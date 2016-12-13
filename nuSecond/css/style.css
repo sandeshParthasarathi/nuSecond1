@@ -38,16 +38,6 @@ img{
  border:none;
 }
 
-/* Preloader */
-#preloader {
-  position: fixed;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  background-color:#000; /* change if the mask should have another color then white */
-  z-index:99999; /* makes sure it stays on top */
-}
 
 #status {
   width:200px;
