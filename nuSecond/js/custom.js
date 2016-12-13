@@ -64,7 +64,7 @@ jQuery(function($){
       slide: 'div',
       autoplay: true,
       fade: true,
-      autoplaySpeed: 5000,
+      autoplaySpeed: 1500,
       cssEase: 'linear'
     });
 
