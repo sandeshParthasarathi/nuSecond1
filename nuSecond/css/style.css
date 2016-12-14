@@ -5,7 +5,7 @@ body,html{
 body {
   font-size: 16px;
   font-weight: 500;
-  font-family: 'Oxygen', "Varela", "Open Sans", sans-serif;
+  font-family: 'Oxygen', "Open Sans", sans-serif;
   overflow-x: hidden !important;
   text-align: justify;
 }
@@ -621,6 +621,7 @@ div[data-dimension] {
   text-align: center;
   width: 100%;
 }
+
 .single_team:hover {
     border: 2px solid #000;
     box-shadow: 4px 4px 4px #337ab7;
@@ -663,6 +664,7 @@ div[data-dimension] {
   margin-bottom: 10px;
   text-transform: uppercase;
 }
+
 .single_team p {
   line-height: 26px;
 }
