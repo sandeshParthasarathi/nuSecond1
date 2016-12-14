@@ -695,7 +695,7 @@ div[data-dimension] {
 /*--------------------*/
 
 /*-------------services.html --------*/
- #technology_services, #technology_services, #technology_services{
+ #technology_services, #technology_services{
   padding: 80px 0 100px;
 }
 #training{
@@ -703,6 +703,9 @@ div[data-dimension] {
   margin-bottom: 20px;
 }
 
+ .cloud{
+  padding: 80px 0 0px; 
+}
 /*--------------------*/
 
 #clients {
