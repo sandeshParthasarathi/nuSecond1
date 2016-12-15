@@ -83,20 +83,20 @@ function validateEmail () {
 
 }
 
-function validateMessage() {
-  var message = document.getElementById('contact-message').value;
-  var required = 30;
-  var left = required - message.length;
+// function validateMessage() {
+//   var message = document.getElementById('contact-message').value;
+//   var required = 30;
+//   var left = required - message.length;
 
-  if (left > 0) {
-    producePrompt(left + ' more characters required','message-error','red');
-    return false;
-  }
+//   if (left > 0) {
+//     producePrompt(left + ' more characters required','message-error','red');
+//     return false;
+//   }
 
-  producePrompt('Valid', 'message-error', 'green');
-  return true;
+//   producePrompt('Valid', 'message-error', 'green');
+//   return true;
 
-}
+// }
 
 function validateForm() {
     if (!validateName() || !validatePhone() || !validateEmail() || !validateMessage()) {
