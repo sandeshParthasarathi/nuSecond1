@@ -1024,6 +1024,11 @@ div.address {
 .footer_left>p{
   font-weight: bolder;
 }
+
+.certified{
+  float: right;
+  padding: 10px 10px 10px 10px;
+}
 /*======================///////////////
 			start responsive style
 =====================///////////////////////*/
